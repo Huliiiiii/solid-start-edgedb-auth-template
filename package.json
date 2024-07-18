@@ -1,0 +1,52 @@
+{
+  "name": "edgedb-solid-start-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.14.1",
+    "@solidjs/start": "^1.0.4",
+    "@tailwindcss/forms": "^0.5.7",
+    "edgedb": "^1.5.4",
+    "solid-heroicons": "^3.2.4",
+    "solid-js": "^1.8.18",
+    "terracotta": "^1.0.5",
+    "vinxi": "^0.3.14"
+  },
+  "devDependencies": {
+    "@edgedb/generate": "^0.5.3",
+    "@eslint/eslintrc": "2.x",
+    "@eslint/js": "^9.7.0",
+    "@ngneat/falso": "^7.2.0",
+    "@types/bun": "latest",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20",
+    "@typescript-eslint/eslint-plugin": "6.x",
+    "@typescript-eslint/parser": "6.x",
+    "autoprefixer": "^10.0.1",
+    "esbuild-runner": "^2.2.2",
+    "eslint": "9.x",
+    "eslint-config-prettier": "9.x",
+    "globals": "^15.8.0",
+    "inquirer": "^9.2.17",
+    "postcss": "^8",
+    "prettier": "3.x",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5",
+    "typescript-eslint": "^7.16.1",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "version": "vinxi version",
+    "lint": "bunx eslint ./src",
+    "auth:setup": "bun esr password-auth-setup.ts",
+    "generate:edgeql": "bunx @edgedb/generate edgeql-js",
+    "generate:interfaces": "bunx @edgedb/generate interfaces",
+    "generate:all": "bun generate:edgeql && bun generate:interfaces"
+  },
+  "type": "module",
+  "module": "index.ts"
+}
