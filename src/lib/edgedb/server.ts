@@ -1,5 +1,5 @@
 import { createClient } from "edgedb"
-import { SolidServerAuth } from "edgedb-auth-solid-start/server"
+import { SolidServerAuth } from "@edgedb/auth-solid-start/server"
 
 export const client = createClient({
 	// Note: when developing locally you will need to set tls security to

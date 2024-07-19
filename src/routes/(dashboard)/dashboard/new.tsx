@@ -2,7 +2,7 @@ import AddItem from "@/src/components/AddItem"
 import { A, useAction } from "@solidjs/router"
 import { Icon } from "solid-heroicons"
 import { arrowLeft } from "solid-heroicons/solid"
-import { addItemAction } from "../../data"
+import { addItemAction } from "../data"
 
 export default function Example() {
 	const addItem = useAction(addItemAction)

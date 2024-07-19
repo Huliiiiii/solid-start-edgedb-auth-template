@@ -5,13 +5,13 @@
   "dependencies": {
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.14.1",
-    "@solidjs/start": "^1.0.4",
+    "@solidjs/start": "^1.0.5",
     "@tailwindcss/forms": "^0.5.7",
     "edgedb": "^1.5.4",
     "solid-heroicons": "^3.2.4",
     "solid-js": "^1.8.18",
     "terracotta": "^1.0.5",
-    "vinxi": "^0.3.14"
+    "vinxi": "^0.4.0"
   },
   "devDependencies": {
     "@edgedb/generate": "^0.5.3",
