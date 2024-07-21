@@ -1,9 +1,5 @@
 import Navbar from "@/src/components/Navbar"
-import {
-	createAsync,
-	RouteSectionProps,
-	useAction
-} from "@solidjs/router"
+import { createAsync, RouteSectionProps, useAction } from "@solidjs/router"
 import { Show, Suspense } from "solid-js"
 import { checkSignedIn, handleSignOut } from "./data"
 

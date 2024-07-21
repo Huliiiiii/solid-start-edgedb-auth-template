@@ -9,10 +9,6 @@ const isSignedIn = cache(async () => {
 	return serverAuthHelper.getSession().isSignedIn()
 }, "isSignedIn")
 
-export const route = {
-	load: () => isSignedIn(),
-}
-
 export default function Home() {
 	const signedIn = createAsync(() => isSignedIn())
 
